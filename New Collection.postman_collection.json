@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "16dcec9a-d12c-4028-a085-3587d14e6d27",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28094796"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:9090/list_tables\n",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:9090/list_tables\n",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9090",
+					"path": [
+						"list_tables\n"
+					]
+				},
+				"description": "Request for Listing tables"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:9090/get_table_details?table_name=CapBudgWS",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:9090/get_table_details?table_name=CapBudgWS",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9090",
+					"path": [
+						"get_table_details"
+					],
+					"query": [
+						{
+							"key": "table_name",
+							"value": "CapBudgWS"
+						}
+					]
+				},
+				"description": "Request for getting details of the table"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:9090/row_sum?table_name=CapBudgWS&row_name=EBIT",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:9090/row_sum?table_name=CapBudgWS&row_name=EBIT",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9090",
+					"path": [
+						"row_sum"
+					],
+					"query": [
+						{
+							"key": "table_name",
+							"value": "CapBudgWS"
+						},
+						{
+							"key": "row_name",
+							"value": "EBIT"
+						}
+					]
+				},
+				"description": "Get row sum"
+			},
+			"response": []
+		}
+	]
+}
